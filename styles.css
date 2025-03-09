@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fce4ec; /* Soft pink background */
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+.message-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.message-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: #f8bbd0; /* Lighter pink on hover */
+}
+
+.click-text {
+    font-size: 1.2rem;
+    color: #e91e63; /* Darker pink for text */
+    transition: opacity 0.3s ease;
+}
+
+.heart-message {
+    position: absolute;
+    opacity: 0;
+    font-size: 1.2rem;
+    color: #e91e63;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+.message-box.show-message .click-text {
+    opacity: 0;
+}
+
+.message-box.show-message .heart-message {
+    opacity: 1;
+}

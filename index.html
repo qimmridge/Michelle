@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="message-box" onclick="showMessage()">
+            <span class="click-text">Click Me Michelle</span>
+            <span class="heart-message">Selber cute! ❤️</span>
+        </div>
+    </div>
+    <script>
+        function showMessage() {
+            const messageBox = document.querySelector('.message-box');
+            messageBox.classList.toggle('show-message');
+        }
+    </script>
+</body>
+</html>
